@@ -18,9 +18,9 @@ int main() {
             local +=i;
         }
 
-        mtx.lock();
+        std::lock_guard<std::mutex> lock(mtx);
         total_sum += local;
-        mtx.unlock();
+        //mtx.unlock();
 
     };
 
