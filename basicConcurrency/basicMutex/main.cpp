@@ -39,7 +39,7 @@ int main() {
 
     for(auto &t:threads) t.join();
 
-    std::cout<<total_sum+1000000<<std::endl;
+    std::cout<<total_sum<<std::endl;
 
     return 0;
 }
