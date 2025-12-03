@@ -32,9 +32,9 @@ int main(){
         threads.emplace_back(partialSum,start,end,std::ref(results[i]));
     }
 
-    for (auto &t : threads) {
-        t.join();
-    }
+    //std::cout<<sizeof(results[0])<<std::endl;
+
+    for (auto &t : threads) t.join();
 
     long long total_sum = 0;
 
